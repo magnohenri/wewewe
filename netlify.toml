@@ -1,0 +1,27 @@
+# Netlify Configuration File
+
+# Settings for Netlify build
+[build]
+  command = "npm run build"
+  publish = ".next"
+  
+  # Especificar ambiente Python
+  [build.environment]
+    PYTHON_VERSION = "3.9.7"
+
+# Redirect all requests to Next.js
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Netlify CMS configuration
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+# Identity settings for Netlify CMS
+[template.environment]
+  NETLIFY_IDENTITY_WIDGET = "true"

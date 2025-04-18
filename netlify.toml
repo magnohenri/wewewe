@@ -9,8 +9,6 @@
   [build.environment]
     PYTHON_VERSION = "3.9.7"
     NODE_VERSION = "18"
-    NPM_FLAGS = "--no-package-lock"
-    USE_NPM_INSTALL = "true"
 
 # Redirect all requests to Next.js
 [[redirects]]

@@ -1,78 +1,36 @@
-# Neighborhood - Aplicação para Avaliação de Vizinhos
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Este repositório contém uma aplicação web chamada Neighborhood, que permite aos usuários avaliarem seus vizinhos e participarem de comunidades locais.
+## Getting Started
 
-## Funcionalidades
-
-- Avaliação de vizinhos (barulhentos, fumantes, etc.)
-- Criação e gestão de comunidades (edifícios, condomínios, ruas)
-- Sistema de assinatura premium para recursos avançados
-- Interface administrativa com Netlify CMS
-
-## Tecnologias Utilizadas
-
-- Next.js
-- Tailwind CSS
-- Netlify CMS
-- Netlify Identity para autenticação
-
-## Estrutura do Projeto
-
-- `public/admin/` - Configuração do Netlify CMS
-- `content/` - Arquivos de conteúdo gerenciados pelo CMS
-- `src/app/` - Páginas da aplicação Next.js
-- `src/components/` - Componentes reutilizáveis
-- `src/lib/` - Utilitários e funções de API
-
-## Instruções de Deploy
-
-### Pré-requisitos
-
-- Conta no GitHub
-- Conta no Netlify
-
-### Passos para Deploy
-
-1. Faça fork deste repositório para sua conta GitHub
-2. Acesse o Netlify e clique em "New site from Git"
-3. Selecione GitHub como provedor e autorize o Netlify
-4. Selecione o repositório que você acabou de criar
-5. Configure as opções de build:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
-6. Clique em "Deploy site"
-
-### Configuração do Netlify CMS
-
-1. Após o deploy, acesse as configurações do site no Netlify
-2. Vá para "Identity" e clique em "Enable Identity"
-3. Em "Registration preferences", selecione "Invite only"
-4. Em "Services > Git Gateway", clique em "Enable Git Gateway"
-5. Convide usuários administradores em "Identity > Invite users"
-
-### Acesso ao CMS
-
-Após a configuração, o CMS estará disponível em:
-`https://seu-site.netlify.app/admin/`
-
-## Desenvolvimento Local
+First, run the development server:
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/neighborhood-app.git
-
-# Entre no diretório
-cd neighborhood-app
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Acesse `http://localhost:3000` para ver a aplicação em funcionamento.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Licença
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Este projeto está licenciado sob a licença MIT.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
